@@ -10,6 +10,7 @@
   --border-base: var(--grey-300);
   --border-radius-base: 4px;
 
+  --font-base: "Open Sans", sans-serif;
   --font-monospace: "Source Code Pro", monospace;
   --font-extrabold: 800;
   --font-bold: 700;
@@ -85,7 +86,7 @@
 }
 
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: var(--font-base);
   font-size: 14px;
 
   margin: 0;
@@ -276,7 +277,9 @@ strong {
   color: #fff;
   background: var(--gradient-primary);
 
+  font-family: var(--font-base);
   font-weight: var(--font-medium);
+  font-size: 14px;
   text-align: center;
   cursor: pointer;
   transition: all 300ms linear;
