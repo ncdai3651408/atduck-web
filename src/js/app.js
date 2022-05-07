@@ -5,6 +5,8 @@ const descFromName = '#js-description-from'
 const descToName = '#js-description-to'
 const btnCopyName = '#js-btn-copy'
 
+$(inputFromAddressName).focus()
+
 const handleAddressChange = () => {
   try {
     const fromAddress = $(inputFromAddressName).val()

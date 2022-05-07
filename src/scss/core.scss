@@ -129,10 +129,6 @@ strong {
 
 // BEGIN: Utils
 
-.block {
-  display: block;
-}
-
 .flex {
   display: flex;
 
@@ -191,15 +187,14 @@ strong {
   top: 0;
   z-index: 9999;
 
-  padding: 16px;
-  border: 1px solid var(--border-base);
-  border-top: 0;
-  border-bottom-left-radius: var(--border-radius-base);
-  border-bottom-right-radius: var(--border-radius-base);
-  background-color: var(--grey-700);
-
   display: flex;
   align-items: center;
+  padding: 16px;
+  margin-top: 8px;
+
+  border: 1px solid var(--border-base);
+  border-radius: var(--border-radius-base);
+  background-color: var(--grey-700);
 
   .ext-logo {
     flex: 1;
