@@ -1,7 +1,7 @@
 {
   "name": "atduck-web",
   "description": "AtDuck is an email address generator that helps you send a message from Duck Address.",
-  "version": "1.0",
+  "version": "1.1",
   "main": "index.js",
   "repository": "git@github.com:ncdai3651408/atduck-web.git",
   "author": "Dai Nguyen <ncdai3651408@gmail.com>",
