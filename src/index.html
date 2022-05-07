@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="images/atduck-icon-48.png" type="image/png" />
+
+  <title>AtDuck – Email Address Generator</title>
+
+  <meta name="description" content="AtDuck is an email address generator that helps you send a message from Duck Address.">
+  <meta name="keywords" content="duckduckgo, duck address, duck email, duck, duck.com, atduck">
+  <meta name="author" content="NCDAi Studio">
+
+  <!-- Open Graph -->
+  <meta property="og:url" content="https://atduck.com" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="AtDuck – Email Address Generator" />
+  <meta property="og:description" content="AtDuck is an email address generator that helps you send a message from Duck Address." />
+  <meta property="og:image" content="https://atduck.com/images/site-cover.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="fb:app_id" content="1527529787437950" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" value="summary" />
+  <meta name="twitter:title" content="AtDuck – Email Address Generator" />
+  <meta name="twitter:description" content="AtDuck is an email address generator that helps you send a message from Duck Address." />
+  <meta name="twitter:creator" content="@iamncdai" />
+  <meta name="twitter:image" content="https://atduck.com/images/site-cover.png" />
+
+  <link rel="stylesheet" href="css/core.css">
+  <link rel="stylesheet" href="css/popup.css">
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;500&display=swap');
+  </style>
+</head>
+
+<body>
+  <div class="ext-container">
+    <header class="primary-header">
+      <div class="ext-logo">
+        <a href="https://atduck.com" title="AtDuck – Email Address Generator" target="_blank">
+          <img src="images/atduck-logo-text.svg" alt="AtDuck" />
+        </a>
+      </div>
+
+      <div class="ext-links">
+        <span class="ext-links-item divider">
+          <a href="https://github.com/ncdai3651408/atduck-web" title="Source Code" target="_blank">GitHub</a>
+        </span>
+
+        <span class="ext-links-item divider">
+          <a href="https://atduck.ncdaistudio.com/contact" title="Contact" target="_blank">Contact</a>
+        </span>
+
+        <span class="ext-links-item">
+          <a href="#" id="js-ext-version" title="Version">Version 1.0</a>
+        </span>
+      </div>
+    </header>
+
+    <main class="py-4">
+      <div class="flex">
+        <div class="form-input-group flex-1 mr-4">
+          <label for="js-from-address">From</label>
+          <input type="email" name="from-address" id="js-from-address" placeholder="yourduck@duck.com"
+            class="form-input w-full" autofocus="true" />
+        </div>
+
+        <div class="form-input-group flex-1">
+          <label for="js-to-address">To</label>
+          <input type="email" name="to-address" id="js-to-address" placeholder="yourfriend@domain.com"
+            class="form-input w-full" />
+        </div>
+      </div>
+
+      <div class="arrow-wrapper flex justify-center mt-4 mb-4 text-primary">
+        <svg width="16px" viewBox="0 0 384 512" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M374.6 310.6l-160 160C208.4 476.9 200.2 480 192 480s-16.38-3.125-22.62-9.375l-160-160c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 370.8V64c0-17.69 14.33-31.1 31.1-31.1S224 46.31 224 64v306.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0S387.1 298.1 374.6 310.6z"
+            fill="currentColor" />
+        </svg>
+      </div>
+
+      <div class="steps border p-4 rounded">
+        <div class="step-item">
+          <strong class="text-primary">1.</strong> Open Mail Client (Gmail, Outlook, etc.)
+        </div>
+
+        <div class="step-item">
+          <strong class="text-primary">2.</strong> Click <code>Compose</code> or <code>New Message</code>
+        </div>
+
+        <div class="step-item">
+          <strong class="text-primary">3.</strong> Copy and Paste this address into the <code>To</code> input
+        </div>
+
+        <div class="step-item flex">
+          <input id="js-recipient-address" class="form-input w-full mr-4" placeholder="Recipient Address" disabled>
+          <button type="button" class="btn" id="js-btn-copy">Copy</button>
+        </div>
+
+        <div class="step-item">
+          <strong class="text-primary">4.</strong> Enter <code>Subject</code> and <code>Content</code>
+        </div>
+
+        <div class="step-item">
+          <strong class="text-primary">5.</strong> Click <code>Send</code>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="libs/jquery/jquery-3.6.0.min.js"></script>
+  <script src="js/utils.js"></script>
+  <script src="js/app.js"></script>
+</body>
+
+</html>

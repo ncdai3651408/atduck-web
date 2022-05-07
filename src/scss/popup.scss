@@ -1,0 +1,30 @@
+.ext-container {
+  width: 768px;
+  max-width: 100vw;
+
+  padding-left: 16px;
+  padding-right: 16px;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.steps {
+  .step-item {
+    &:not(:last-child) {
+      margin-bottom: 16px;
+    }
+  }
+}
+
+#js-recipient-address {
+  color: var(--primary-base);
+
+  &.copied {
+    color: var(--primary-base) !important;
+  }
+
+  &.error {
+    color: var(--red-base) !important;
+  }
+}

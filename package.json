@@ -1,0 +1,45 @@
+{
+  "name": "atduck-web",
+  "description": "AtDuck is an email address generator that helps you send a message from Duck Address.",
+  "version": "1.0",
+  "main": "index.js",
+  "repository": "git@github.com:ncdai3651408/atduck-web.git",
+  "author": "Dai Nguyen <ncdai3651408@gmail.com>",
+  "license": "MIT",
+  "keywords": [
+    "duckduckgo",
+    "duck address",
+    "duck email",
+    "duck",
+    "duck.com",
+    "atduck"
+  ],
+  "scripts": {
+    "start": "serve ./build -p 2707",
+    "watch": "gulp watch",
+    "build": "gulp build",
+    "pm2:start": "pm2 start ./pm2.config.js ; pm2 status",
+    "pm2:stop": "pm2 stop ./pm2.config.js ; pm2 status",
+    "pm2:reload": "pm2 reload ./pm2.config.js ; pm2 status"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "del": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.1.0",
+    "gulp-uglify": "^3.0.2",
+    "merge-stream": "^2.0.0",
+    "sass": "^1.49.8",
+    "standard": "^16.0.4"
+  },
+  "standard": {
+    "parser": "babel-eslint",
+    "global": [
+      "$",
+      "chrome"
+    ],
+    "ignore": [
+      "./src/libs/**/*"
+    ]
+  }
+}
